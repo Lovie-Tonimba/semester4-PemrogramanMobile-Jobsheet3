@@ -1,21 +1,22 @@
 import 'dart:io';
+import 'histori.dart';
 import 'menu.dart';
 import 'transaksi.dart';
 
 void main() {
   while (true) {
-  daftarMenu();
+    daftarMenu();
 
-  stdout.write("Pilih menu (1-6): ");
-  String? input = stdin.readLineSync();
+    stdout.write("Pilih menu (1-6): ");
+    String? input = stdin.readLineSync();
 
     if (input == '1' || input == '2' || input == '3' || input == '4') {
       prosesPembayaran(input!, daftarHarga[input]!);
     } else if (input == '5') {
-
+      transaksiHistori();
     } else if (input == '6') {
       print("Terima kasih sudah mampir yaa..");
-      break; 
+      break;
     } else {
       print("Input tidak valid, masukkan angka 1 sampai 6");
     }
