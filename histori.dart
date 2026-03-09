@@ -5,7 +5,7 @@ void tambahRiwayat(String data) {
 }
 
 void transaksiHistori() {
-  print('\n--- RIWAYAT TRANSAKSI ---');
+  print('--- RIWAYAT TRANSAKSI ---');
   
   if (riwayatPesanan.isEmpty) {
     print('Belum ada pesanan yang lunas');
